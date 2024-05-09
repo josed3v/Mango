@@ -53,10 +53,11 @@
                         <a class="nav-link" href="index.html" style="font-size: 20px;">Contatos</a>
                     </li>
                     <li class="nav-item">
-                        <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-search" type="submit">Search</button>
+                        <form class="d-flex flex-column flex-sm-row" role="search">
+                            <input class="form-control ml-2 mb-4 me-2 col-sm-12 col-md-6" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-search ml-2 mb-5 col-sm-12 col-md-3" type="submit">Search</button>
                         </form>
+                        
                     </li>
                 </ul>
             </div>
@@ -71,30 +72,18 @@
 
         </div>
     </div>
-    
-<!-- Footer -->
-<footer>
-    <div class="container-fluid container-footer">
-      <div class="row justify-content-center align-items-center">
-        <div class="col-md-4 col-sm-12">
-          <h5 class="ml-5 mb-3 mt-3">Inscreva-se para receber novas informações:</h5>
-          <form action="#" method="post" class="form-inline justify-content-center ml-3">
-            <div class="form-group mb-2 col-md-6">
-              <label for="email" class="sr-only">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="Seu endereço de email">
-            </div>
-            <div class="form-group col-md-4">
-              <button type="submit" class="btn btn-search mb-2">Inscreva-se</button>
-            </div>
-          </form>
+
+    <!-- Footer -->
+    <footer>
+        <h5 class="footer-title">Inscreva-se para receber novas informações:</h5>
+        <div class="footer-content">
+          <input class="w-xl-50 m-xl-3" type="email" placeholder="Insira seu e-mail">
+          <button class="mb-xl-2 m-xl-1 w-50 shadow" type="submit">Registrar</button>
         </div>
-      </div>
-    </div>
-    <div class="text-center mt-3">
-      <p>&copy; 2024 Mango Marketing. Todos os direitos reservados.</p>
-    </div>
-  </footer>
-  
+        <p class="copyright">&copy; 2024 Mango Marketing. Todos os direitos reservados.</p>
+      </footer>
+      
+
 
     <!-- Adicione os scripts do Bootstrap -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
