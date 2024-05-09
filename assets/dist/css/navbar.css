@@ -1,0 +1,110 @@
+/* Estilo para a caixa de pesquisa */
+.search-box {
+  margin-right: 20px;
+}
+.btn-search{
+  background-color: #222233;
+  color: #ff8243;
+  border-color: #ff8243;
+}
+.btn-search:hover{
+  color: #222233;
+  background-color: #ff8243;
+}
+
+/* Cor de fundo da navbar */
+.navbar-custom {
+  background-color: #222233;
+  height: 120px;
+  position: relative; 
+}
+.logo-img {
+  max-width: 30%;
+  max-height: 30%;
+}
+/* Cor do texto e ícones dentro da navbar */
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .navbar-brand {
+  color: #ff8243;
+}
+
+/* Cor do texto dos itens da navbar quando passa o mouse */
+.navbar-custom .navbar-nav .nav-link:hover {
+  color: #222233;
+  background-color: #ff8243;
+  border-radius: 50% 50% 0 0; /* Bordas arredondadas apenas na parte superior */
+}
+
+/* Adicionando margem entre os itens e a barra de pesquisa */
+.navbar-custom .navbar-nav .nav-item {
+  margin-right: 15px;
+  /* Ajuste conforme necessário */
+}
+
+/* Cor das barras do botão de collapse */
+.navbar-toggler-icon {
+  background-color: #ff8243;
+  border-radius: 50% 50% 25% 35%;
+}
+
+
+/* Estilo para fixar os itens na parte inferior da navbar */
+.navbar-custom .navbar-nav {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 120px; /* Altura da navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #222233;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Alinha os itens ao topo */
+    align-items: center; /* Centraliza os itens horizontalmente */
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}  
+
+@media screen and (max-width: 991.98px) {
+  .navbar-custom {
+  background-color: #222233;
+  height: 120px;
+  position: relative; 
+}
+  .form-control {
+      margin-bottom: 50px; /* Espaçamento inferior desejado */
+  }
+  .btn-search{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* Inicialmente oculto */
+    background-color: #ff8243;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  .nav-item {
+    margin-bottom: 20px;
+  }
+}

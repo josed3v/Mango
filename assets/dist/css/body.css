@@ -1,0 +1,15 @@
+/* Estilo padrão do corpo */
+body {
+    background-image: linear-gradient(to bottom, #222233,#222233, #ff8243, #ff8243);
+}
+
+.container-body {
+    height: 100vh;
+    background-color: antiquewhite;
+    border-radius: 15px;
+
+  }
+
+.container-footer{
+    color:#222233;
+}
