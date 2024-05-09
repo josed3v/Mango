@@ -77,8 +77,10 @@
     <footer>
         <h5 class="footer-title">Inscreva-se para receber novas informações:</h5>
         <div class="footer-content">
-          <input class="w-xl-50 m-xl-3" type="email" placeholder="Insira seu e-mail">
-          <button class="mb-xl-2 m-xl-1 w-50 shadow" type="submit">Registrar</button>
+            <form class="col-xl-12" id="signup-form" action="/registrar" method="post">
+                <input class="w-xl-50 m-xl-3" type="email" name="email" placeholder="Insira seu e-mail">
+                <button class="mb-xl-2 m-xl-1 w-50 shadow" type="submit">Registrar</button>
+            </form>            
         </div>
         <p class="copyright">&copy; 2024 Mango Marketing. Todos os direitos reservados.</p>
       </footer>
